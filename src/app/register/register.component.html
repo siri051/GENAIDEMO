@@ -1,0 +1,73 @@
+<app-header></app-header>
+<div class="register-container">
+  <h2>Create an Account</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        [(ngModel)]="user.username"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        [(ngModel)]="user.email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input
+        id="phone"
+        name="phone"
+        type="tel"
+        [(ngModel)]="user.phone"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input
+        id="age"
+        name="age"
+        type="number"
+        [(ngModel)]="user.age"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        [(ngModel)]="user.password"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password:</label>
+      <input
+        id="confirmPassword"
+        name="confirmPassword"
+        type="password"
+        [(ngModel)]="confirmPassword"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <button type="submit">Register</button>
+    </div>
+    <div class="form-group">
+      <p>Already have an account? <a routerLink="/login">Login</a></p>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>

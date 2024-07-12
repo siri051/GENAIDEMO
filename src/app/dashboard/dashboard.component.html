@@ -1,0 +1,30 @@
+<!-- dashboard.component.html -->
+<app-header></app-header>
+<div class="dashboard-container">
+  <div class="container">
+    <h2>Dashboard</h2>
+    <div class="product-list">
+      <h3>Available Softwares</h3>
+      <div class="grid-container">
+        <div class="grid-item" *ngFor="let product of products">
+          {{ product.name }}
+          <button (click)="addProduct(product)">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="selected-products">
+      <h3>Selected Softwares</h3>
+      <div class="grid-container">
+        <div class="grid-item" *ngFor="let product of selectedProducts">
+          {{ product.name }}
+          <button (click)="removeProduct(product)">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="submit-button" (click)="submitCart()">Submit Cart</button>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,23 @@
+/* footer.component.css */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #eceeee;
+    color: rgb(117, 27, 27);
+    text-align: center;
+    padding: 10px;
+    
+  }
+.contact-info {
+  color: #0b0c0c; /* Adjust color as needed */
+}
+.contact-link {
+  text-decoration: none; 
+  /* Remove underline */
+  color: #0c0b0b;
+}
+
+.contact-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

@@ -1,0 +1,19 @@
+/* header.component.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .header .left a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header .right {
+    font-weight: bold;
+  }
+  

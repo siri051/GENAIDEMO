@@ -1,0 +1,35 @@
+.welcome-box {
+  width: 500px;
+  height: 300px;
+  margin: 90px auto; /* Centers the box horizontally */
+  padding: 30px;
+  background-color: #edeee8;
+  border: 1px solid #e0e0e0;
+  box-shadow: 4px 8px 12px rgba(28, 3, 56, 0.1);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 500px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #0e0d0d;
+}
+
+p {
+  font-size: 16px;
+  color: #bd1f1f;
+}

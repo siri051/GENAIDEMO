@@ -1,0 +1,26 @@
+<!-- cart-success.component.html -->
+<div class="header">
+    <div class="logo">
+      <img src="assets/aig1.jpg" alt="Logo">
+    </div>
+    <div class="sign-out">
+      <button (click)="signOut()">Sign Out</button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="success-message">
+      <h2>Cart Submitted Successfully!</h2>
+      <p>Your selected products have been successfully added to your cart.</p>
+    </div>
+  
+    <div class="product-list">
+      <h3>Selected Softwares</h3>
+      <ul>
+        <li *ngFor="let product of cart">
+          {{ product.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <app-footer></app-footer>
